@@ -1,0 +1,21 @@
+{
+	"ID": "ef71a6c144025c1c81e7fbba7bc64cdc",
+	"TypeName": "FlaxEditor.Content.Settings.StreamingSettings",
+	"EngineBuild": 6910,
+	"Data": {
+	"TextureGroups": [
+		{
+			"Name": "World",
+			"SamplerFilter": 2,
+			"MaxAnisotropy": 16,
+			"Quality": 1.0,
+			"QualityIfInvisible": 0.5,
+			"TimeToInvisible": 20.0,
+			"MipLevelsMin": 0,
+			"MipLevelsMax": 14,
+			"MipLevelsBias": 0,
+			"MipLevelsMaxPerPlatform": null
+		}
+	]
+}
+}

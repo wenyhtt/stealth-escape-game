@@ -1,0 +1,49 @@
+{
+	"ID": "089f805fcbf215ebab1801dc52e27960",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6912,
+	"Data": [
+	{
+		"ID": "089f805fcbf14e1bab1801ba52e2780a",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "BookActor"
+	},
+	{
+		"ID": "089f8060de5b2907bced78b505383e70",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "089f805fcbf14e1bab1801ba52e2780a",
+		"Name": "BookModel",
+		"Transform": {
+			"Scale": {
+				"X": 0.3840000033378601,
+				"Y": 0.031999967992305756,
+				"Z": 0.527999997138977
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "089f8061efc42f59dc2027323d31a53a",
+		"TypeName": "FlaxEngine.BoxCollider",
+		"ParentID": "089f8060de5b2907bced78b505383e70",
+		"Name": "BoxCollider",
+		"Transform": {
+			"Scale": {
+				"X": 0.9147555232048035,
+				"Y": 0.031999945640563965,
+				"Z": 0.9223446249961853
+			}
+		}
+	}
+]
+}
