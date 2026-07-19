@@ -33,6 +33,12 @@
 		}
 	},
 	{
+		"ID": "08dee5681648951cf753003f6a380148",
+		"TypeName": "Game.BookPickup",
+		"ParentID": "089f8060de5b2907bced78b505383e70",
+		"V": {}
+	},
+	{
 		"ID": "089f8061efc42f59dc2027323d31a53a",
 		"TypeName": "FlaxEngine.BoxCollider",
 		"ParentID": "089f8060de5b2907bced78b505383e70",
@@ -43,7 +49,8 @@
 				"Y": 0.031999945640563965,
 				"Z": 0.9223446249961853
 			}
-		}
+		},
+		"Layer": 2
 	}
 ]
 }

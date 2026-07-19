@@ -14,6 +14,8 @@ public class PlayerScript : Script
     public bool CanJump = false;
     public bool UseMouse = true;
     public float JumpForce = 800;
+    public float InteractDistance = 150.0f;
+    public LayersMask InteractableLayer;
 
     public float Friction = 8.0f;
     public float GroundAccelerate = 5000;
@@ -94,6 +96,18 @@ public class PlayerScript : Script
         if (Input.GetAction("Interact"))
         {
             Debug.Log("Interact");
+        }
+
+        var ray = new Ray(CameraTarget.Position, CameraTarget.Direction);
+        if (Physics.RayCast(ray.Position, ray.Direction, out var hit, InteractDistance, InteractableLayer))
+        {
+            var interactable = hit.Collider.Parent?.GetScript<BookPickup>() as IInteractable;
+            // NOTE: for multiple interactable types, use a shared lookup instead of hardcoding BookPickup
+
+            if (interactable != null && Input.GetKeyDown(KeyboardKeys.E))
+            {
+                interactable.Interact();
+            }
         }
     }
 

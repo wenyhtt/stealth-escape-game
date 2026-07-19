@@ -6,7 +6,8 @@
 	{
 		"ID": "089f8060df512c95bfa62fd8206f4578",
 		"TypeName": "FlaxEngine.CharacterController",
-		"Name": "PlayerController"
+		"Name": "PlayerController",
+		"Layer": 2
 	},
 	{
 		"ID": "089f8060ebc198c4cba372f89853586a",
@@ -29,7 +30,8 @@
 				"Y": 81.41804504394531,
 				"Z": 18.900955200195313
 			}
-		}
+		},
+		"Layer": 2
 	}
 ]
 }
