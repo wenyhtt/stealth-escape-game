@@ -1,5 +1,8 @@
 using System;
+using System.Diagnostics;
 using FlaxEngine;
+
+namespace Game;
 
 public class PlayerScript : Script
 {
@@ -93,18 +96,15 @@ public class PlayerScript : Script
         // }
 
         // Interact with objects
-        if (Input.GetAction("Interact"))
-        {
-            Debug.Log("Interact");
-        }
-
         var ray = new Ray(CameraTarget.Position, CameraTarget.Direction);
         if (Physics.RayCast(ray.Position, ray.Direction, out var hit, InteractDistance, InteractableLayer))
         {
             var interactable = hit.Collider.Parent?.GetScript<BookPickup>() as IInteractable;
             // NOTE: for multiple interactable types, use a shared lookup instead of hardcoding BookPickup
 
-            if (interactable != null && Input.GetKeyDown(KeyboardKeys.E))
+            // FlaxEngine.Debug.Log("Interactable hit: " + hit.Collider.Parent?.Name);
+
+            if (interactable != null && Input.GetAction("Interact"))
             {
                 interactable.Interact();
             }

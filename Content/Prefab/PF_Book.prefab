@@ -6,7 +6,8 @@
 	{
 		"ID": "089f805fcbf14e1bab1801ba52e2780a",
 		"TypeName": "FlaxEngine.EmptyActor",
-		"Name": "BookActor"
+		"Name": "BookActor",
+		"Layer": 2
 	},
 	{
 		"ID": "089f8060de5b2907bced78b505383e70",
@@ -20,6 +21,7 @@
 				"Z": 0.527999997138977
 			}
 		},
+		"Layer": 2,
 		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
 		"Buffer": {
 			"Entries": [
@@ -31,12 +33,6 @@
 				}
 			]
 		}
-	},
-	{
-		"ID": "08dee5681648951cf753003f6a380148",
-		"TypeName": "Game.BookPickup",
-		"ParentID": "089f8060de5b2907bced78b505383e70",
-		"V": {}
 	},
 	{
 		"ID": "089f8061efc42f59dc2027323d31a53a",

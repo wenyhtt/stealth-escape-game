@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using FlaxEngine;
 
+namespace Game;
+
 /// <summary>
 /// IInteractable interface.
 /// </summary>

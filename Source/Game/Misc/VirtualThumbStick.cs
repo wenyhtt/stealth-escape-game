@@ -1,6 +1,8 @@
 ﻿using FlaxEngine;
 using FlaxEngine.GUI;
 
+namespace Game;
+
 public class VirtualThumbStick : Control
 {
     private bool _isPressed;
@@ -70,7 +72,7 @@ public class VirtualThumbStick : Control
         _isPressed = false;
         _input = Float2.Zero;
     }
-    
+
     /// <inheritdoc />
     public override void PerformLayout(bool force = false)
     {

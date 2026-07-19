@@ -18,31 +18,31 @@
 			}
 		},
 		{
-			"ID": "089f8060ee400ddccd5c3330a98ac698",
-			"PrefabID": "089f8060df52e71bbfa62ff2206f4674",
-			"PrefabObjectID": "089f8060df512c95bfa62fd8206f4578",
+			"ID": "089f8074082c2ba2ca169ef788d4fa36",
+			"PrefabID": "089f8074099f19c9bfb2f50020f11176",
+			"PrefabObjectID": "089f8074099ee3aabfb2f4dc20f11008",
 			"ParentID": "089f80a40de493048c54bde91ffca4ac",
 			"Name": "PF_PlayerController",
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": 140.0,
+					"Y": 150.0,
 					"Z": 0.0
 				}
 			}
 		},
 		{
-			"ID": "089f8060ee41ec85cd5c3331a98ac6b6",
-			"PrefabID": "089f8060df52e71bbfa62ff2206f4674",
-			"PrefabObjectID": "089f8060ebc198c4cba372f89853586a",
-			"ParentID": "089f8060ee400ddccd5c3330a98ac698",
+			"ID": "089f8074082d38beca169ef888d4fa4a",
+			"PrefabID": "089f8074099f19c9bfb2f50020f11176",
+			"PrefabObjectID": "089f80741690324fc665cfb763ed0fd2",
+			"ParentID": "089f8074082c2ba2ca169ef788d4fa36",
 			"V": {}
 		},
 		{
-			"ID": "089f8060ee42fec3cd5c3331a98ac6ba",
-			"PrefabID": "089f8060df52e71bbfa62ff2206f4674",
-			"PrefabObjectID": "089f8060ebc0ae1ecba372f898535856",
-			"ParentID": "089f8060ee400ddccd5c3330a98ac698"
+			"ID": "089f8074082ee5ddca169ef888d4fa4c",
+			"PrefabID": "089f8074099f19c9bfb2f50020f11176",
+			"PrefabObjectID": "089f8074168ff1fbc665cfb763ed0fc0",
+			"ParentID": "089f8074082c2ba2ca169ef788d4fa36"
 		},
 		{
 			"ID": "089f8060ee7bc48ace0b8aa3b0642928",
@@ -57,6 +57,14 @@
 					"Z": 398.54559326171875
 				}
 			}
+		},
+		{
+			"ID": "1ba057974caa23c11668acb2966029e3",
+			"TypeName": "Game.BookPickup",
+			"ParentID": "089f8060ee7bc48ace0b8aa3b0642928",
+			"V": {
+	"PageImage": "089f80751b27efabe0eb15296d205fa0"
+}
 		},
 		{
 			"ID": "089f8060ee7cec64ce0b8aa4b064294c",
@@ -198,7 +206,7 @@
 			"ID": "08dee55e01e95271ee6bacf511279493",
 			"TypeName": "FlaxEngine.UICanvas",
 			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "UICanvas",
+			"Name": "Overlay",
 			"Transform": {
 				"Orientation": {
 					"X": 1.0,
@@ -318,7 +326,7 @@
 			"ID": "08dee55f0729e3c113c28ce2868aac02",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "08dee55e01e95271ee6bacf511279493",
-			"Name": "Image",
+			"Name": "Crosshair",
 			"Transform": {
 				"Translation": {
 					"X": 928.0,
@@ -398,6 +406,224 @@
 	"Visible": true,
 	"AutoFocus": false
 }
+		},
+		{
+			"ID": "089f807a26e4977967b3e583b0fca976",
+			"TypeName": "FlaxEngine.UICanvas",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"IsActive": false,
+			"Name": "BookCanvas",
+			"Transform": {
+				"Orientation": {
+					"X": 1.0,
+					"Y": 4.371138828673793e-8,
+					"Z": 4.371138828673793e-8,
+					"W": 1.910685465164705e-15
+				}
+			},
+			"V": {}
+		},
+		{
+			"ID": "713f878342c4b82506ccbab83b946052",
+			"TypeName": "Game.BookViewUI",
+			"ParentID": "089f807a26e4977967b3e583b0fca976",
+			"V": {
+	"PageImageControl": "089f807e2c0a532dbdc03af90d76a69e",
+	"DisableWhileOpen": []
+}
+		},
+		{
+			"ID": "089f807a26e5cf4b67b4095eb0fe1008",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "089f807a26e4977967b3e583b0fca976",
+			"Name": "Canvas Scalar",
+			"Control": "FlaxEngine.GUI.CanvasScaler",
+			"Data": {
+	"ResolutionCurve": {
+		"Keyframes": [
+			{
+				"Time": 0.0,
+				"Value": 0.0
+			},
+			{
+				"Time": 480.0,
+				"Value": 0.444
+			},
+			{
+				"Time": 720.0,
+				"Value": 0.666
+			},
+			{
+				"Time": 1080.0,
+				"Value": 1.0
+			},
+			{
+				"Time": 8640.0,
+				"Value": 8.0
+			}
+		]
+	},
+	"DpiCurve": {
+		"Keyframes": [
+			{
+				"Time": 1.0,
+				"Value": 1.0
+			},
+			{
+				"Time": 96.0,
+				"Value": 1.0
+			},
+			{
+				"Time": 200.0,
+				"Value": 2.0
+			},
+			{
+				"Time": 400.0,
+				"Value": 4.0
+			}
+		]
+	},
+	"Scaling": 0,
+	"ScaleFactor": 1.0,
+	"PhysicalUnit": 3,
+	"PhysicalUnitSize": 1.0,
+	"ResolutionMode": 0,
+	"ResolutionMin": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"ResolutionMax": {
+		"X": 7680.0,
+		"Y": 4320.0
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "089f807b28a7e5c26fbd9bb2015e043a",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "089f807a26e4977967b3e583b0fca976",
+			"Name": "Background",
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": null,
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"BackgroundBrush": {
+		"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp",
+		"Color": {
+			"R": 0.0,
+			"G": 0.0,
+			"B": 0.0,
+			"A": 0.7
+		}
+	},
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "089f807e2c0a532dbdc03af90d76a69e",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "089f807a26e4977967b3e583b0fca976",
+			"Name": "UIControl"
 		}
 	]
 }
