@@ -9,7 +9,16 @@
 			"Mode": 1,
 			"Key": 69,
 			"MouseButton": 0,
-			"GamepadButton": 13,
+			"GamepadButton": 15,
+			"Gamepad": -1,
+			"DeadZone": 0.5
+		},
+		{
+			"Name": "Close",
+			"Mode": 1,
+			"Key": 27,
+			"MouseButton": 0,
+			"GamepadButton": 14,
 			"Gamepad": -1,
 			"DeadZone": 0.5
 		},
@@ -55,15 +64,6 @@
 			"Key": 39,
 			"MouseButton": 0,
 			"GamepadButton": 4,
-			"Gamepad": -1,
-			"DeadZone": 0.5
-		},
-		{
-			"Name": "NavigateSubmit",
-			"Mode": 1,
-			"Key": 13,
-			"MouseButton": 0,
-			"GamepadButton": 13,
 			"Gamepad": -1,
 			"DeadZone": 0.5
 		}

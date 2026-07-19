@@ -59,14 +59,6 @@
 			}
 		},
 		{
-			"ID": "1ba057974caa23c11668acb2966029e3",
-			"TypeName": "Game.BookPickup",
-			"ParentID": "089f8060ee7bc48ace0b8aa3b0642928",
-			"V": {
-	"PageImage": "089f80751b27efabe0eb15296d205fa0"
-}
-		},
-		{
 			"ID": "089f8060ee7cec64ce0b8aa4b064294c",
 			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
 			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
@@ -76,6 +68,14 @@
 					{}
 				]
 			}
+		},
+		{
+			"ID": "ef78de0e49927de0b0517a84f565e766",
+			"TypeName": "Game.BookPickup",
+			"ParentID": "089f8060ee7cec64ce0b8aa4b064294c",
+			"V": {
+	"PageImage": "089f80751b27efabe0eb15296d205fa0"
+}
 		},
 		{
 			"ID": "089f8061efc60529dc202a763d31c5ee",
@@ -408,11 +408,103 @@
 }
 		},
 		{
+			"ID": "08dee584506fccf4b9a86144263a64ee",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "08dee55e01e95271ee6bacf511279493",
+			"Name": "PerfDebugOverlay"
+		},
+		{
+			"ID": "d3ec51cd4bed46cce7900d8bdf0952ae",
+			"TypeName": "Game.PerfDebugOverlay",
+			"ParentID": "08dee584506fccf4b9a86144263a64ee",
+			"V": {
+	"PerfLabel": {
+		"Text": "",
+		"CaseOption": 0,
+		"Bold": false,
+		"Italic": false,
+		"TextColor": {
+			"R": 1.0,
+			"G": 1.0,
+			"B": 1.0,
+			"A": 1.0
+		},
+		"TextColorHighlighted": {
+			"R": 1.0,
+			"G": 1.0,
+			"B": 1.0,
+			"A": 1.0
+		},
+		"HorizontalAlignment": 1,
+		"VerticalAlignment": 1,
+		"Wrapping": 0,
+		"BaseLinesGapScale": 1.0,
+		"Font": {
+			"Font": "4508d98f4aa1f0bd59362b81d47e38f4",
+			"Size": 9.0
+		},
+		"Material": null,
+		"Margin": {
+			"Left": 0.0,
+			"Right": 0.0,
+			"Top": 0.0,
+			"Bottom": 0.0
+		},
+		"ClipText": false,
+		"AutoWidth": true,
+		"AutoHeight": true,
+		"AutoFitText": true,
+		"AutoFitTextRange": {
+			"X": 0.1,
+			"Y": 100.0
+		},
+		"ClipChildren": true,
+		"CullChildren": true,
+		"AnchorMin": {
+			"X": 0.0,
+			"Y": 0.0
+		},
+		"AnchorMax": {
+			"X": 0.0,
+			"Y": 0.0
+		},
+		"Offsets": {
+			"Left": 0.0,
+			"Right": 100.0,
+			"Top": 0.0,
+			"Bottom": 20.0
+		},
+		"Scale": {
+			"X": 1.0,
+			"Y": 1.0
+		},
+		"Pivot": {
+			"X": 0.5,
+			"Y": 0.5
+		},
+		"Shear": {
+			"X": 0.0,
+			"Y": 0.0
+		},
+		"Rotation": 0.0,
+		"BackgroundColor": {
+			"R": 0.0,
+			"G": 0.0,
+			"B": 0.0,
+			"A": 0.0
+		},
+		"BackgroundBrush": null,
+		"Enabled": true,
+		"Visible": true,
+		"AutoFocus": false
+	}
+}
+		},
+		{
 			"ID": "089f807a26e4977967b3e583b0fca976",
 			"TypeName": "FlaxEngine.UICanvas",
 			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"IsActive": false,
-			"Name": "BookCanvas",
+			"Name": "BookViewCanvas",
 			"Transform": {
 				"Orientation": {
 					"X": 1.0,
@@ -429,7 +521,8 @@
 			"ParentID": "089f807a26e4977967b3e583b0fca976",
 			"V": {
 	"PageImageControl": "089f807e2c0a532dbdc03af90d76a69e",
-	"DisableWhileOpen": []
+	"BackgroundDim": "089f80825699810a2764ae4d2de10886",
+	"Player": "089f8074082d38beca169ef888d4fa4a"
 }
 		},
 		{
@@ -538,10 +631,10 @@
 }
 		},
 		{
-			"ID": "089f807b28a7e5c26fbd9bb2015e043a",
+			"ID": "089f80825699810a2764ae4d2de10886",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "089f807a26e4977967b3e583b0fca976",
-			"Name": "Background",
+			"Name": "BackgroundDim",
 			"Control": "FlaxEngine.GUI.Image",
 			"Data": {
 	"Brush": null,
@@ -600,22 +693,14 @@
 	},
 	"Rotation": 0.0,
 	"BackgroundColor": {
-		"R": 1.0,
-		"G": 1.0,
-		"B": 1.0,
-		"A": 1.0
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.68777347
 	},
-	"BackgroundBrush": {
-		"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp",
-		"Color": {
-			"R": 0.0,
-			"G": 0.0,
-			"B": 0.0,
-			"A": 0.7
-		}
-	},
+	"BackgroundBrush": null,
 	"Enabled": true,
-	"Visible": true,
+	"Visible": false,
 	"AutoFocus": false
 }
 		},
@@ -623,7 +708,75 @@
 			"ID": "089f807e2c0a532dbdc03af90d76a69e",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "089f807a26e4977967b3e583b0fca976",
-			"Name": "UIControl"
+			"Name": "BookViewController",
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": null,
+	"Margin": {
+		"Left": 20.0,
+		"Right": 20.0,
+		"Top": 40.0,
+		"Bottom": 40.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
 		}
 	]
 }

@@ -52,7 +52,7 @@ public class BookViewUI : Script
 
     public override void OnUpdate()
     {
-        if (PageImageControl.Get<Control>().Visible && Input.GetKeyDown(KeyboardKeys.Escape))
+        if (PageImageControl.Get<Control>().Visible && Input.GetAction("Close"))
             Hide();
     }
 }
