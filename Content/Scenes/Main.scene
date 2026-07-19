@@ -45,45 +45,6 @@
 			"ParentID": "089f8074082c2ba2ca169ef788d4fa36"
 		},
 		{
-			"ID": "089f8060ee7bc48ace0b8aa3b0642928",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f805fcbf14e1bab1801ba52e2780a",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "PF_Book",
-			"Transform": {
-				"Translation": {
-					"X": 54.01757049560547,
-					"Y": 132.7288055419922,
-					"Z": 398.54559326171875
-				}
-			}
-		},
-		{
-			"ID": "089f8060ee7cec64ce0b8aa4b064294c",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
-			"ParentID": "089f8060ee7bc48ace0b8aa3b0642928",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"ID": "ef78de0e49927de0b0517a84f565e766",
-			"TypeName": "Game.BookPickup",
-			"ParentID": "089f8060ee7cec64ce0b8aa4b064294c",
-			"V": {
-	"PageImage": "089f80751b27efabe0eb15296d205fa0"
-}
-		},
-		{
-			"ID": "089f8061efc60529dc202a763d31c5ee",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f8061efc42f59dc2027323d31a53a",
-			"ParentID": "089f8060ee7cec64ce0b8aa4b064294c"
-		},
-		{
 			"ID": "089f80a40de5a9cb8c54c1a21ffcc9fa",
 			"TypeName": "FlaxEngine.DirectionalLight",
 			"ParentID": "089f80a40de493048c54bde91ffca4ac",
@@ -173,10 +134,49 @@
 			}
 		},
 		{
+			"ID": "089f8060ee7bc48ace0b8aa3b0642928",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f805fcbf14e1bab1801ba52e2780a",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "PF_Book1",
+			"Transform": {
+				"Translation": {
+					"X": 54.01757049560547,
+					"Y": 132.7288055419922,
+					"Z": 398.54559326171875
+				}
+			}
+		},
+		{
+			"ID": "089f8060ee7cec64ce0b8aa4b064294c",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
+			"ParentID": "089f8060ee7bc48ace0b8aa3b0642928",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "ef78de0e49927de0b0517a84f565e766",
+			"TypeName": "Game.BookPickup",
+			"ParentID": "089f8060ee7cec64ce0b8aa4b064294c",
+			"V": {
+	"PageImage": "089f80751b27efabe0eb15296d205fa0"
+}
+		},
+		{
+			"ID": "089f8061efc60529dc202a763d31c5ee",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8061efc42f59dc2027323d31a53a",
+			"ParentID": "089f8060ee7cec64ce0b8aa4b064294c"
+		},
+		{
 			"ID": "089f805d8c6af4b4832b66a4c3a7458c",
 			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "Book Table",
+			"Name": "BookTable1",
 			"Transform": {
 				"Translation": {
 					"X": 58.075897216796875,
@@ -200,6 +200,144 @@
 			"ID": "089f8061f12c8e03dc8a040a415440e8",
 			"TypeName": "FlaxEngine.BoxCollider",
 			"ParentID": "089f805d8c6af4b4832b66a4c3a7458c",
+			"Name": "BoxCollider"
+		},
+		{
+			"ID": "4ca6d57f428a37f15d80af96da4662ac",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f805fcbf14e1bab1801ba52e2780a",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "PF_Book2",
+			"Transform": {
+				"Translation": {
+					"X": 244.91770935058594,
+					"Y": 132.7288055419922,
+					"Z": 398.54559326171875
+				}
+			}
+		},
+		{
+			"ID": "ca53448647771a16579afc9b8b8b8299",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
+			"ParentID": "4ca6d57f428a37f15d80af96da4662ac",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "48276e0144e809a9ae1cae92d8ea82cb",
+			"TypeName": "Game.BookPickup",
+			"ParentID": "ca53448647771a16579afc9b8b8b8299",
+			"V": {
+	"PageImage": "089f80847a46307f56672ec703fa57ec"
+}
+		},
+		{
+			"ID": "c6029ef04cff80056f373cbece833fd2",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8061efc42f59dc2027323d31a53a",
+			"ParentID": "ca53448647771a16579afc9b8b8b8299"
+		},
+		{
+			"ID": "3109803f484f5d09af72c49a81b86e6d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "BookTable2",
+			"Transform": {
+				"Translation": {
+					"X": 248.9760284423828,
+					"Y": 69.99996948242188,
+					"Z": 394.7845764160156
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "120b4e8147e552b82cbe87bdf5fabfc7",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "3109803f484f5d09af72c49a81b86e6d",
+			"Name": "BoxCollider"
+		},
+		{
+			"ID": "dfca7b3c4bdc337ee35affbf7e070db1",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f805fcbf14e1bab1801ba52e2780a",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "PF_Book3",
+			"Transform": {
+				"Translation": {
+					"X": -177.8286590576172,
+					"Y": 132.7288055419922,
+					"Z": 398.54559326171875
+				}
+			}
+		},
+		{
+			"ID": "aa031f2747ab5d1a46ac688b5cc50fa2",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
+			"ParentID": "dfca7b3c4bdc337ee35affbf7e070db1",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "0e017bc046544e90ad0fb4920d8acd0f",
+			"TypeName": "Game.BookPickup",
+			"ParentID": "aa031f2747ab5d1a46ac688b5cc50fa2",
+			"V": {
+	"PageImage": "089f80847a419dff5660de1a03bb32da"
+}
+		},
+		{
+			"ID": "81463953487995673641a49f72f11ec0",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8061efc42f59dc2027323d31a53a",
+			"ParentID": "aa031f2747ab5d1a46ac688b5cc50fa2"
+		},
+		{
+			"ID": "ff77af9b4e47efe9323c29a04b77acd0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "BookTable3",
+			"Transform": {
+				"Translation": {
+					"X": -173.7703399658203,
+					"Y": 69.99996948242188,
+					"Z": 394.7845764160156
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "736b93f7475a12e7eb5a7483352867eb",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "ff77af9b4e47efe9323c29a04b77acd0",
 			"Name": "BoxCollider"
 		},
 		{
@@ -408,97 +546,97 @@
 }
 		},
 		{
-			"ID": "08dee584506fccf4b9a86144263a64ee",
+			"ID": "08dee585570d0d5ddee5db2e9aa09283",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "08dee55e01e95271ee6bacf511279493",
-			"Name": "PerfDebugOverlay"
+			"Name": "PerfCounter",
+			"Control": "FlaxEngine.GUI.Label",
+			"Data": {
+	"Text": "FPS: {0}\nGPU: {1:0.00}ms\nCPU: {2:0.00}ms\nUpdate: {3:0.00}ms",
+	"CaseOption": 0,
+	"Bold": false,
+	"Italic": false,
+	"TextColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"TextColorHighlighted": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"HorizontalAlignment": 0,
+	"VerticalAlignment": 1,
+	"Wrapping": 0,
+	"BaseLinesGapScale": 1.0,
+	"Font": {
+		"Font": "4508d98f4aa1f0bd59362b81d47e38f4",
+		"Size": 9.0
+	},
+	"Material": null,
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"ClipText": false,
+	"AutoWidth": false,
+	"AutoHeight": false,
+	"AutoFitText": false,
+	"AutoFitTextRange": {
+		"X": 0.1,
+		"Y": 100.0
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 100.8,
+		"Top": 0.0,
+		"Bottom": 57.600002
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
 		},
 		{
-			"ID": "d3ec51cd4bed46cce7900d8bdf0952ae",
-			"TypeName": "Game.PerfDebugOverlay",
-			"ParentID": "08dee584506fccf4b9a86144263a64ee",
-			"V": {
-	"PerfLabel": {
-		"Text": "",
-		"CaseOption": 0,
-		"Bold": false,
-		"Italic": false,
-		"TextColor": {
-			"R": 1.0,
-			"G": 1.0,
-			"B": 1.0,
-			"A": 1.0
-		},
-		"TextColorHighlighted": {
-			"R": 1.0,
-			"G": 1.0,
-			"B": 1.0,
-			"A": 1.0
-		},
-		"HorizontalAlignment": 1,
-		"VerticalAlignment": 1,
-		"Wrapping": 0,
-		"BaseLinesGapScale": 1.0,
-		"Font": {
-			"Font": "4508d98f4aa1f0bd59362b81d47e38f4",
-			"Size": 9.0
-		},
-		"Material": null,
-		"Margin": {
-			"Left": 0.0,
-			"Right": 0.0,
-			"Top": 0.0,
-			"Bottom": 0.0
-		},
-		"ClipText": false,
-		"AutoWidth": true,
-		"AutoHeight": true,
-		"AutoFitText": true,
-		"AutoFitTextRange": {
-			"X": 0.1,
-			"Y": 100.0
-		},
-		"ClipChildren": true,
-		"CullChildren": true,
-		"AnchorMin": {
-			"X": 0.0,
-			"Y": 0.0
-		},
-		"AnchorMax": {
-			"X": 0.0,
-			"Y": 0.0
-		},
-		"Offsets": {
-			"Left": 0.0,
-			"Right": 100.0,
-			"Top": 0.0,
-			"Bottom": 20.0
-		},
-		"Scale": {
-			"X": 1.0,
-			"Y": 1.0
-		},
-		"Pivot": {
-			"X": 0.5,
-			"Y": 0.5
-		},
-		"Shear": {
-			"X": 0.0,
-			"Y": 0.0
-		},
-		"Rotation": 0.0,
-		"BackgroundColor": {
-			"R": 0.0,
-			"G": 0.0,
-			"B": 0.0,
-			"A": 0.0
-		},
-		"BackgroundBrush": null,
-		"Enabled": true,
-		"Visible": true,
-		"AutoFocus": false
-	}
-}
+			"ID": "0d53a19041c9cd1afdb514871cc8ac7e",
+			"TypeName": "PerfCounter",
+			"ParentID": "08dee585570d0d5ddee5db2e9aa09283",
+			"V": {}
 		},
 		{
 			"ID": "089f807a26e4977967b3e583b0fca976",
