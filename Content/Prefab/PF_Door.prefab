@@ -6,13 +6,13 @@
 	{
 		"ID": "089f80e30bd8d06edd35eed348441b04",
 		"TypeName": "FlaxEngine.EmptyActor",
-		"Name": "DoorActor"
+		"Name": "Door"
 	},
 	{
 		"ID": "089f80e3146fe82ce9096585be86bb54",
 		"TypeName": "FlaxEngine.StaticModel",
 		"ParentID": "089f80e30bd8d06edd35eed348441b04",
-		"Name": "DoorModel",
+		"Name": "Model",
 		"Transform": {
 			"Scale": {
 				"X": 1.0,
@@ -36,7 +36,7 @@
 		"ID": "089f80e3146eb8b0e9096585be86bb34",
 		"TypeName": "FlaxEngine.BoxCollider",
 		"ParentID": "089f80e3146fe82ce9096585be86bb54",
-		"Name": "BoxCollider",
+		"Name": "Collider",
 		"Center": {
 			"X": -0.000003814697265625,
 			"Y": -0.000003051757857974735,

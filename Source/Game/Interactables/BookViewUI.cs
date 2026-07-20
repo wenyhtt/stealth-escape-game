@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using FlaxEngine;
 using FlaxEngine.GUI;
@@ -15,7 +15,7 @@ public class BookViewUI : Script
 
     public UIControl PageImageControl;
     public UIControl BackgroundDim;
-    public PlayerScript Player;
+    public PlayerController Player;
 
     public override void OnEnable()
     {
@@ -31,7 +31,10 @@ public class BookViewUI : Script
         Screen.CursorVisible = true;
         Screen.CursorLock = CursorLockMode.None;
 
-        Player.Enabled = false;
+        if (Player != null)
+            Player.Enabled = false;
+        else
+            Debug.LogWarning("BookViewUI: Player is not assigned in the editor!");
     }
 
     public void Hide()
@@ -41,7 +44,10 @@ public class BookViewUI : Script
         Screen.CursorVisible = false;
         Screen.CursorLock = CursorLockMode.Locked;
 
-        Player.Enabled = true;
+        if (Player != null)
+            Player.Enabled = true;
+        else
+            Debug.LogWarning("BookViewUI: Player is not assigned in the editor!");
     }
 
     private void SetVisible(bool visible)

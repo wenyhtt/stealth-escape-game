@@ -18,33 +18,6 @@
 			}
 		},
 		{
-			"ID": "089f8074082c2ba2ca169ef788d4fa36",
-			"PrefabID": "089f8074099f19c9bfb2f50020f11176",
-			"PrefabObjectID": "089f8074099ee3aabfb2f4dc20f11008",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "PF_PlayerController",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 150.0,
-					"Z": 0.0
-				}
-			}
-		},
-		{
-			"ID": "089f80ee17c98592ff2a6b9a9be1eb34",
-			"PrefabID": "089f8074099f19c9bfb2f50020f11176",
-			"PrefabObjectID": "089f80ee17c44131ff2a3be89be00e3a",
-			"ParentID": "089f8074082c2ba2ca169ef788d4fa36",
-			"V": {}
-		},
-		{
-			"ID": "089f8074082ee5ddca169ef888d4fa4c",
-			"PrefabID": "089f8074099f19c9bfb2f50020f11176",
-			"PrefabObjectID": "089f8074168ff1fbc665cfb763ed0fc0",
-			"ParentID": "089f8074082c2ba2ca169ef788d4fa36"
-		},
-		{
 			"ID": "08dee55e01e95271ee6bacf511279493",
 			"TypeName": "FlaxEngine.UICanvas",
 			"ParentID": "089f80a40de493048c54bde91ffca4ac",
@@ -660,7 +633,7 @@
 			"V": {
 	"PageImageControl": "089f807e2c0a532dbdc03af90d76a69e",
 	"BackgroundDim": "089f80825699810a2764ae4d2de10886",
-	"Player": "089f80ee17c98592ff2a6b9a9be1eb34"
+	"Player": "089f80fc1893225e64690c08904c2354"
 }
 		},
 		{
@@ -976,6 +949,33 @@
 				"Y": 99.66869354248047,
 				"Z": 99.6687240600586
 			}
+		},
+		{
+			"ID": "089f80fc189106b664690c07904c233a",
+			"PrefabID": "089f80fc0e3a981d5b60125d35f2aae8",
+			"PrefabObjectID": "089f80fc0e39b6355b60123f35f2a9b4",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "PF_Player",
+			"Transform": {
+				"Translation": {
+					"X": -64.01089477539063,
+					"Y": 140.00003051757813,
+					"Z": 8.90509033203125
+				}
+			}
+		},
+		{
+			"ID": "089f80fc0adc55976db7654ded5b32ec",
+			"PrefabID": "089f80fc0e3a981d5b60125d35f2aae8",
+			"PrefabObjectID": "089f80fc0ad8d8536db73523ed59515c",
+			"ParentID": "089f80fc189106b664690c07904c233a",
+			"V": {}
+		},
+		{
+			"ID": "089f80fc1892d39164690c08904c2352",
+			"PrefabID": "089f80fc0e3a981d5b60125d35f2aae8",
+			"PrefabObjectID": "089f80fc165b208b62a7bcc67ebf18bc",
+			"ParentID": "089f80fc189106b664690c07904c233a"
 		}
 	]
 }

@@ -6,14 +6,14 @@
 	{
 		"ID": "089f805fcbf14e1bab1801ba52e2780a",
 		"TypeName": "FlaxEngine.EmptyActor",
-		"Name": "BookActor",
+		"Name": "Book",
 		"Layer": 2
 	},
 	{
 		"ID": "089f8060de5b2907bced78b505383e70",
 		"TypeName": "FlaxEngine.StaticModel",
 		"ParentID": "089f805fcbf14e1bab1801ba52e2780a",
-		"Name": "BookModel",
+		"Name": "Model",
 		"Transform": {
 			"Scale": {
 				"X": 0.3840000033378601,
@@ -38,7 +38,7 @@
 		"ID": "089f8061efc42f59dc2027323d31a53a",
 		"TypeName": "FlaxEngine.BoxCollider",
 		"ParentID": "089f8060de5b2907bced78b505383e70",
-		"Name": "BoxCollider",
+		"Name": "Collider",
 		"Transform": {
 			"Scale": {
 				"X": 0.9147555232048035,

@@ -1,0 +1,41 @@
+{
+	"ID": "089f80fc0e3a981d5b60125d35f2aae8",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6912,
+	"Data": [
+	{
+		"ID": "089f80fc0e39b6355b60123f35f2a9b4",
+		"TypeName": "FlaxEngine.CharacterController",
+		"Name": "Player",
+		"Radius": 20.0,
+		"Height": 170.0
+	},
+	{
+		"ID": "089f80fc0ad8d8536db73523ed59515c",
+		"TypeName": "Game.Player.PlayerController",
+		"ParentID": "089f80fc0e39b6355b60123f35f2a9b4",
+		"V": {
+	"Player": "089f80fc0e39b6355b60123f35f2a9b4",
+	"CameraTarget": "089f80fc165b208b62a7bcc67ebf18bc",
+	"InteractDistance": 250.0,
+	"InteractableLayer": {
+		"Mask": 4
+	}
+}
+	},
+	{
+		"ID": "089f80fc165b208b62a7bcc67ebf18bc",
+		"TypeName": "FlaxEngine.Camera",
+		"ParentID": "089f80fc0e39b6355b60123f35f2a9b4",
+		"Name": "Camera",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 90.0,
+				"Z": 0.0
+			}
+		},
+		"Layer": 2
+	}
+]
+}

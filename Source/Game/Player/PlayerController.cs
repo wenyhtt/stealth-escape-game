@@ -6,11 +6,10 @@ using Game.Interactables;
 
 namespace Game.Player;
 
-public class PlayerScript : Script
+public class PlayerController : Script
 {
-    public CharacterController PlayerController;
-    public Actor CameraTarget;
-    public Camera Camera;
+    public CharacterController Player;
+    public Camera CameraTarget;
 
     public Model SphereModel;
 
@@ -75,7 +74,7 @@ public class PlayerScript : Script
             var interactable = hit.Collider.Parent?.GetScript<BookPickup>() as IInteractable;
             // NOTE: for multiple interactable types, use a shared lookup instead of hardcoding BookPickup
 
-            // FlaxEngine.Debug.Log("Interactable hit: " + hit.Collider.Parent?.Name);
+            FlaxEngine.Debug.Log("Interactable hit: " + hit.Collider.Parent?.Name);
 
             if (interactable != null && Input.GetAction("Interact"))
             {
@@ -92,13 +91,13 @@ public class PlayerScript : Script
     public override void OnFixedUpdate()
     {
         // Update camera
-        var camTrans = Camera.Transform;
+        var camTrans = CameraTarget.Transform;
         var camFactor = Mathf.Saturate(CameraSmoothing * Time.DeltaTime);
         CameraTarget.LocalOrientation = Quaternion.Lerp(CameraTarget.LocalOrientation, Quaternion.Euler(_pitch, _yaw, 0), camFactor);
         //CameraTarget.LocalOrientation = Quaternion.Euler(pitch, yaw, 0);
         camTrans.Translation = Vector3.Lerp(camTrans.Translation, CameraTarget.Position, camFactor);
         camTrans.Orientation = CameraTarget.Orientation;
-        Camera.Transform = camTrans;
+        CameraTarget.Transform = camTrans;
 
         var inputH = Input.GetAxis("Horizontal") + _horizontal;
         var inputV = Input.GetAxis("Vertical") + _vertical;
@@ -112,7 +111,7 @@ public class PlayerScript : Script
         rotation.Z = 0;
         velocity = Vector3.Transform(velocity, Quaternion.Euler(rotation));
 
-        if (PlayerController.IsGrounded)
+        if (Player.IsGrounded)
         {
             velocity = MoveGround(velocity.Normalized, Horizontal(_velocity));
             velocity.Y = -Mathf.Abs(Physics.Gravity.Y * 0.5f);
@@ -128,7 +127,7 @@ public class PlayerScript : Script
             velocity = Vector3.Zero;
 
         // Jump
-        if (_jump && PlayerController.IsGrounded)
+        if (_jump && Player.IsGrounded)
             velocity.Y = JumpForce;
         _jump = false;
 
@@ -136,7 +135,7 @@ public class PlayerScript : Script
         velocity.Y += -Mathf.Abs(Physics.Gravity.Y * 2.5f) * Time.DeltaTime;
 
         // Check if player is not blocked by something above head
-        if ((PlayerController.Flags & CharacterController.CollisionFlags.Above) != 0)
+        if ((Player.Flags & CharacterController.CollisionFlags.Above) != 0)
         {
             if (velocity.Y > 0)
             {
@@ -146,7 +145,7 @@ public class PlayerScript : Script
         }
 
         // Move
-        PlayerController.Move(velocity * Time.DeltaTime);
+        Player.Move(velocity * Time.DeltaTime);
         _velocity = velocity;
     }
 
@@ -188,7 +187,7 @@ public class PlayerScript : Script
 
     public override void OnDebugDraw()
     {
-        var trans = PlayerController.Transform;
-        DebugDraw.DrawWireCapsule(trans.Translation, trans.Orientation * Quaternion.Euler(90, 0, 0), PlayerController.Radius, PlayerController.Height, Color.Blue);
+        var trans = Player.Transform;
+        DebugDraw.DrawWireCapsule(trans.Translation, trans.Orientation * Quaternion.Euler(90, 0, 0), Player.Radius, Player.Height, Color.Blue);
     }
 }
