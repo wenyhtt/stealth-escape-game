@@ -68,35 +68,6 @@ public class PlayerScript : Script
         if (CanJump && Input.GetAction("Jump"))
             _jump = true;
 
-        // Shoot
-        // if (Input.GetAction("Fire"))
-        // {
-        //     var ball = new RigidBody
-        //     {
-        //         Name = "Bullet",
-        //         StaticFlags = StaticFlags.None,
-        //         UseCCD = true,
-        //     };
-        //     var ballModel = new StaticModel
-        //     {
-        //         Model = SphereModel,
-        //         Parent = ball,
-        //         StaticFlags = StaticFlags.None
-        //     };
-        //     var ballCollider = new SphereCollider
-        //     {
-        //         Parent = ball,
-        //         StaticFlags = StaticFlags.None
-        //     };
-        //     ball.Transform = new Transform(
-        //         CameraTarget.Position + Horizontal(CameraTarget.Direction) * 70.0f,
-        //         Quaternion.Identity,
-        //         new Vector3(0.1f));
-        //     Level.SpawnActor(ball);
-        //     ball.LinearVelocity = CameraTarget.Direction * 600.0f;
-        //     Destroy(ball, 5.0f);
-        // }
-
         // Interact with objects
         var ray = new Ray(CameraTarget.Position, CameraTarget.Direction);
         if (Physics.RayCast(ray.Position, ray.Direction, out var hit, InteractDistance, InteractableLayer))
