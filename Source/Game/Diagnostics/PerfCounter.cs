@@ -1,6 +1,8 @@
 ﻿using FlaxEngine;
 using FlaxEngine.GUI;
 
+namespace Game;
+
 public class PerfCounter : Script
 {
     private Label _label;

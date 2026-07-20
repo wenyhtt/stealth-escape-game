@@ -32,9 +32,9 @@
 			}
 		},
 		{
-			"ID": "089f8074082d38beca169ef888d4fa4a",
+			"ID": "089f80ee17c98592ff2a6b9a9be1eb34",
 			"PrefabID": "089f8074099f19c9bfb2f50020f11176",
-			"PrefabObjectID": "089f80741690324fc665cfb763ed0fd2",
+			"PrefabObjectID": "089f80ee17c44131ff2a3be89be00e3a",
 			"ParentID": "089f8074082c2ba2ca169ef788d4fa36",
 			"V": {}
 		},
@@ -43,302 +43,6 @@
 			"PrefabID": "089f8074099f19c9bfb2f50020f11176",
 			"PrefabObjectID": "089f8074168ff1fbc665cfb763ed0fc0",
 			"ParentID": "089f8074082c2ba2ca169ef788d4fa36"
-		},
-		{
-			"ID": "089f80a40de5a9cb8c54c1a21ffcc9fa",
-			"TypeName": "FlaxEngine.DirectionalLight",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "Sun",
-			"Transform": {
-				"Translation": {
-					"X": 40.0,
-					"Y": 160.0,
-					"Z": 0.0
-				},
-				"Orientation": {
-					"X": 0.3826834559440613,
-					"Y": 0.0,
-					"Z": 0.0,
-					"W": 0.9238795042037964
-				}
-			}
-		},
-		{
-			"ID": "089f80a40de6c04e8c54dcda1ffdda3a",
-			"TypeName": "FlaxEngine.Sky",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "Sky",
-			"Transform": {
-				"Translation": {
-					"X": 40.0,
-					"Y": 150.0,
-					"Z": 0.0
-				}
-			},
-			"Sun": "089f80a40de5a9cb8c54c1a21ffcc9fa"
-		},
-		{
-			"ID": "089f80a40de7bcba8c54dd891ffde118",
-			"TypeName": "FlaxEngine.SkyLight",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "SkyLight",
-			"Brightness": 2.5,
-			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
-		},
-		{
-			"ID": "089f80a40de8ad3a8c54ddeb1ffde4e6",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "Floor",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 10.0,
-					"Z": 0.0
-				},
-				"Orientation": {
-					"X": 0.7071068286895752,
-					"Y": 0.0,
-					"Z": 0.0,
-					"W": 0.7071068286895752
-				},
-				"Scale": {
-					"X": 10.0,
-					"Y": 10.0,
-					"Z": 0.20000000298023224
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "089f805c180a30ce6dc4b13beda5913a",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "089f80a40de8ad3a8c54ddeb1ffde4e6",
-			"Name": "BoxCollider",
-			"Transform": {
-				"Scale": {
-					"X": 1.0014920234680176,
-					"Y": 1.0049431324005127,
-					"Z": 0.9956831932067871
-				}
-			}
-		},
-		{
-			"ID": "089f8060ee7bc48ace0b8aa3b0642928",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f805fcbf14e1bab1801ba52e2780a",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "PF_Book1",
-			"Transform": {
-				"Translation": {
-					"X": 54.01757049560547,
-					"Y": 132.7288055419922,
-					"Z": 398.54559326171875
-				}
-			}
-		},
-		{
-			"ID": "089f8060ee7cec64ce0b8aa4b064294c",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
-			"ParentID": "089f8060ee7bc48ace0b8aa3b0642928",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"ID": "ef78de0e49927de0b0517a84f565e766",
-			"TypeName": "Game.BookPickup",
-			"ParentID": "089f8060ee7cec64ce0b8aa4b064294c",
-			"V": {
-	"PageImage": "089f80751b27efabe0eb15296d205fa0"
-}
-		},
-		{
-			"ID": "089f8061efc60529dc202a763d31c5ee",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f8061efc42f59dc2027323d31a53a",
-			"ParentID": "089f8060ee7cec64ce0b8aa4b064294c"
-		},
-		{
-			"ID": "089f805d8c6af4b4832b66a4c3a7458c",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "BookTable1",
-			"Transform": {
-				"Translation": {
-					"X": 58.075897216796875,
-					"Y": 69.99996948242188,
-					"Z": 394.7845764160156
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "089f8061f12c8e03dc8a040a415440e8",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "089f805d8c6af4b4832b66a4c3a7458c",
-			"Name": "BoxCollider"
-		},
-		{
-			"ID": "4ca6d57f428a37f15d80af96da4662ac",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f805fcbf14e1bab1801ba52e2780a",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "PF_Book2",
-			"Transform": {
-				"Translation": {
-					"X": 244.91770935058594,
-					"Y": 132.7288055419922,
-					"Z": 398.54559326171875
-				}
-			}
-		},
-		{
-			"ID": "ca53448647771a16579afc9b8b8b8299",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
-			"ParentID": "4ca6d57f428a37f15d80af96da4662ac",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"ID": "48276e0144e809a9ae1cae92d8ea82cb",
-			"TypeName": "Game.BookPickup",
-			"ParentID": "ca53448647771a16579afc9b8b8b8299",
-			"V": {
-	"PageImage": "089f80847a46307f56672ec703fa57ec"
-}
-		},
-		{
-			"ID": "c6029ef04cff80056f373cbece833fd2",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f8061efc42f59dc2027323d31a53a",
-			"ParentID": "ca53448647771a16579afc9b8b8b8299"
-		},
-		{
-			"ID": "3109803f484f5d09af72c49a81b86e6d",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "BookTable2",
-			"Transform": {
-				"Translation": {
-					"X": 248.9760284423828,
-					"Y": 69.99996948242188,
-					"Z": 394.7845764160156
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "120b4e8147e552b82cbe87bdf5fabfc7",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "3109803f484f5d09af72c49a81b86e6d",
-			"Name": "BoxCollider"
-		},
-		{
-			"ID": "dfca7b3c4bdc337ee35affbf7e070db1",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f805fcbf14e1bab1801ba52e2780a",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "PF_Book3",
-			"Transform": {
-				"Translation": {
-					"X": -177.8286590576172,
-					"Y": 132.7288055419922,
-					"Z": 398.54559326171875
-				}
-			}
-		},
-		{
-			"ID": "aa031f2747ab5d1a46ac688b5cc50fa2",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
-			"ParentID": "dfca7b3c4bdc337ee35affbf7e070db1",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"ID": "0e017bc046544e90ad0fb4920d8acd0f",
-			"TypeName": "Game.BookPickup",
-			"ParentID": "aa031f2747ab5d1a46ac688b5cc50fa2",
-			"V": {
-	"PageImage": "089f80847a419dff5660de1a03bb32da"
-}
-		},
-		{
-			"ID": "81463953487995673641a49f72f11ec0",
-			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
-			"PrefabObjectID": "089f8061efc42f59dc2027323d31a53a",
-			"ParentID": "aa031f2747ab5d1a46ac688b5cc50fa2"
-		},
-		{
-			"ID": "ff77af9b4e47efe9323c29a04b77acd0",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "089f80a40de493048c54bde91ffca4ac",
-			"Name": "BookTable3",
-			"Transform": {
-				"Translation": {
-					"X": -173.7703399658203,
-					"Y": 69.99996948242188,
-					"Z": 394.7845764160156
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "736b93f7475a12e7eb5a7483352867eb",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "ff77af9b4e47efe9323c29a04b77acd0",
-			"Name": "BoxCollider"
 		},
 		{
 			"ID": "08dee55e01e95271ee6bacf511279493",
@@ -633,10 +337,306 @@
 }
 		},
 		{
-			"ID": "0d53a19041c9cd1afdb514871cc8ac7e",
-			"TypeName": "PerfCounter",
+			"ID": "7204218f41c96a22d3ec27a78e7cc68b",
+			"TypeName": "Game.PerfCounter",
 			"ParentID": "08dee585570d0d5ddee5db2e9aa09283",
 			"V": {}
+		},
+		{
+			"ID": "089f80a40de5a9cb8c54c1a21ffcc9fa",
+			"TypeName": "FlaxEngine.DirectionalLight",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 160.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			}
+		},
+		{
+			"ID": "089f80a40de6c04e8c54dcda1ffdda3a",
+			"TypeName": "FlaxEngine.Sky",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"Sun": "089f80a40de5a9cb8c54c1a21ffcc9fa"
+		},
+		{
+			"ID": "089f80a40de7bcba8c54dd891ffde118",
+			"TypeName": "FlaxEngine.SkyLight",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "SkyLight",
+			"Brightness": 2.5,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"ID": "089f80a40de8ad3a8c54ddeb1ffde4e6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "Floor",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 10.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 10.0,
+					"Y": 10.0,
+					"Z": 0.20000000298023224
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "089f805c180a30ce6dc4b13beda5913a",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "089f80a40de8ad3a8c54ddeb1ffde4e6",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 1.0014920234680176,
+					"Y": 1.0049431324005127,
+					"Z": 0.9956831932067871
+				}
+			}
+		},
+		{
+			"ID": "089f8060ee7bc48ace0b8aa3b0642928",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f805fcbf14e1bab1801ba52e2780a",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "PF_Book1",
+			"Transform": {
+				"Translation": {
+					"X": 54.01757049560547,
+					"Y": 132.7288055419922,
+					"Z": 398.54559326171875
+				}
+			}
+		},
+		{
+			"ID": "089f8060ee7cec64ce0b8aa4b064294c",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
+			"ParentID": "089f8060ee7bc48ace0b8aa3b0642928",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "37c7a89c434647ce1d92abac159e6f99",
+			"TypeName": "Game.Interactables.BookPickup",
+			"ParentID": "089f8060ee7cec64ce0b8aa4b064294c",
+			"V": {
+	"PageImage": "089f80751b27efabe0eb15296d205fa0"
+}
+		},
+		{
+			"ID": "089f8061efc60529dc202a763d31c5ee",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8061efc42f59dc2027323d31a53a",
+			"ParentID": "089f8060ee7cec64ce0b8aa4b064294c"
+		},
+		{
+			"ID": "089f805d8c6af4b4832b66a4c3a7458c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "BookTable1",
+			"Transform": {
+				"Translation": {
+					"X": 58.075897216796875,
+					"Y": 69.99996948242188,
+					"Z": 394.7845764160156
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "089f8061f12c8e03dc8a040a415440e8",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "089f805d8c6af4b4832b66a4c3a7458c",
+			"Name": "BoxCollider"
+		},
+		{
+			"ID": "4ca6d57f428a37f15d80af96da4662ac",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f805fcbf14e1bab1801ba52e2780a",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "PF_Book2",
+			"Transform": {
+				"Translation": {
+					"X": 244.91770935058594,
+					"Y": 132.7288055419922,
+					"Z": 398.54559326171875
+				}
+			}
+		},
+		{
+			"ID": "ca53448647771a16579afc9b8b8b8299",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
+			"ParentID": "4ca6d57f428a37f15d80af96da4662ac",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "e2c3270d41b20d0d6f44b9a15cee2a69",
+			"TypeName": "Game.Interactables.BookPickup",
+			"ParentID": "ca53448647771a16579afc9b8b8b8299",
+			"V": {
+	"PageImage": "089f80847a46307f56672ec703fa57ec"
+}
+		},
+		{
+			"ID": "c6029ef04cff80056f373cbece833fd2",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8061efc42f59dc2027323d31a53a",
+			"ParentID": "ca53448647771a16579afc9b8b8b8299"
+		},
+		{
+			"ID": "3109803f484f5d09af72c49a81b86e6d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "BookTable2",
+			"Transform": {
+				"Translation": {
+					"X": 248.9760284423828,
+					"Y": 69.99996948242188,
+					"Z": 394.7845764160156
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "120b4e8147e552b82cbe87bdf5fabfc7",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "3109803f484f5d09af72c49a81b86e6d",
+			"Name": "BoxCollider"
+		},
+		{
+			"ID": "dfca7b3c4bdc337ee35affbf7e070db1",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f805fcbf14e1bab1801ba52e2780a",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "PF_Book3",
+			"Transform": {
+				"Translation": {
+					"X": -177.8286590576172,
+					"Y": 132.7288055419922,
+					"Z": 398.54559326171875
+				}
+			}
+		},
+		{
+			"ID": "aa031f2747ab5d1a46ac688b5cc50fa2",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
+			"ParentID": "dfca7b3c4bdc337ee35affbf7e070db1",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "6f3077cc4406cdc9fba081b11e4393a4",
+			"TypeName": "Game.Interactables.BookPickup",
+			"ParentID": "aa031f2747ab5d1a46ac688b5cc50fa2",
+			"V": {
+	"PageImage": "089f80847a419dff5660de1a03bb32da"
+}
+		},
+		{
+			"ID": "81463953487995673641a49f72f11ec0",
+			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
+			"PrefabObjectID": "089f8061efc42f59dc2027323d31a53a",
+			"ParentID": "aa031f2747ab5d1a46ac688b5cc50fa2"
+		},
+		{
+			"ID": "ff77af9b4e47efe9323c29a04b77acd0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "BookTable3",
+			"Transform": {
+				"Translation": {
+					"X": -173.7703399658203,
+					"Y": 69.99996948242188,
+					"Z": 394.7845764160156
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "736b93f7475a12e7eb5a7483352867eb",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "ff77af9b4e47efe9323c29a04b77acd0",
+			"Name": "BoxCollider"
 		},
 		{
 			"ID": "089f807a26e4977967b3e583b0fca976",
@@ -654,13 +654,13 @@
 			"V": {}
 		},
 		{
-			"ID": "713f878342c4b82506ccbab83b946052",
-			"TypeName": "Game.BookViewUI",
+			"ID": "1dc0f4f54cf856642cb16eb5180f304d",
+			"TypeName": "Game.Interactables.BookViewUI",
 			"ParentID": "089f807a26e4977967b3e583b0fca976",
 			"V": {
 	"PageImageControl": "089f807e2c0a532dbdc03af90d76a69e",
 	"BackgroundDim": "089f80825699810a2764ae4d2de10886",
-	"Player": "089f8074082d38beca169ef888d4fa4a"
+	"Player": "089f80ee17c98592ff2a6b9a9be1eb34"
 }
 		},
 		{
@@ -915,6 +915,67 @@
 	"Visible": true,
 	"AutoFocus": false
 }
+		},
+		{
+			"ID": "089f80e315cfab4be9625b38c2005432",
+			"PrefabID": "089f80e30bd9d13ddd35ff2a4844be60",
+			"PrefabObjectID": "089f80e30bd8d06edd35eed348441b04",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "PF_Door",
+			"Transform": {
+				"Translation": {
+					"X": -358.48150634765625,
+					"Y": 144.58590698242188,
+					"Z": -60.507843017578125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			}
+		},
+		{
+			"ID": "089f80e315d050e5e9625b39c2005442",
+			"PrefabID": "089f80e30bd9d13ddd35ff2a4844be60",
+			"PrefabObjectID": "089f80e3146fe82ce9096585be86bb54",
+			"ParentID": "089f80e315cfab4be9625b38c2005432",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "089f80e315d163d0e9625b39c2005444",
+			"PrefabID": "089f80e30bd9d13ddd35ff2a4844be60",
+			"PrefabObjectID": "089f80e3146eb8b0e9096585be86bb34",
+			"ParentID": "089f80e315d050e5e9625b39c2005442"
+		},
+		{
+			"ID": "e5f24eca4bb9268e405445bb49b7d41d",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "089f80e315d050e5e9625b39c2005442",
+			"Name": "BoxCollider 0",
+			"Transform": {
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.05329730734229088,
+					"Z": 0.0,
+					"W": 0.9985787868499756
+				}
+			},
+			"Center": {
+				"X": -0.000003814697265625,
+				"Y": -0.000003051757857974735,
+				"Z": 49.99998474121094
+			},
+			"Size": {
+				"X": 99.66869354248047,
+				"Y": 99.66869354248047,
+				"Z": 99.6687240600586
+			}
 		}
 	]
 }

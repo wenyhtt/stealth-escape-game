@@ -1,7 +1,7 @@
 ﻿using System;
 using FlaxEngine;
 
-namespace Game;
+namespace Game.Player;
 
 /// <summary>
 /// Script for camera movement and rotation control via virtual thumb sticks on a screen (for mobile platforms).

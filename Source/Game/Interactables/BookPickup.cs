@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using FlaxEngine;
 using FlaxEngine.GUI;
+using Game.Interfaces;
 
-namespace Game;
+namespace Game.Interactables;
 
 /// <summary>
 /// BookPickup Script.

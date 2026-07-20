@@ -1,0 +1,52 @@
+{
+	"ID": "089f80e30bd9d13ddd35ff2a4844be60",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6912,
+	"Data": [
+	{
+		"ID": "089f80e30bd8d06edd35eed348441b04",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "DoorActor"
+	},
+	{
+		"ID": "089f80e3146fe82ce9096585be86bb54",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "089f80e30bd8d06edd35eed348441b04",
+		"Name": "DoorModel",
+		"Transform": {
+			"Scale": {
+				"X": 1.0,
+				"Y": 2.5,
+				"Z": 0.10000000149011612
+			}
+		},
+		"Model": "62a9aa73424580375cd97a88a2302cef",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "089f80e3146eb8b0e9096585be86bb34",
+		"TypeName": "FlaxEngine.BoxCollider",
+		"ParentID": "089f80e3146fe82ce9096585be86bb54",
+		"Name": "BoxCollider",
+		"Center": {
+			"X": -0.000003814697265625,
+			"Y": -0.000003051757857974735,
+			"Z": 49.99998474121094
+		},
+		"Size": {
+			"X": 99.66869354248047,
+			"Y": 99.66869354248047,
+			"Z": 99.6687240600586
+		}
+	}
+]
+}

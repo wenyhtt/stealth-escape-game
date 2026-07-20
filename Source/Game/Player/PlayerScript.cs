@@ -1,8 +1,10 @@
 using System;
 using System.Diagnostics;
 using FlaxEngine;
+using Game.Interfaces;
+using Game.Interactables;
 
-namespace Game;
+namespace Game.Player;
 
 public class PlayerScript : Script
 {

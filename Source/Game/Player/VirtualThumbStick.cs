@@ -1,7 +1,7 @@
 ﻿using FlaxEngine;
 using FlaxEngine.GUI;
 
-namespace Game;
+namespace Game.Player;
 
 public class VirtualThumbStick : Control
 {

@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using FlaxEngine;
 using FlaxEngine.GUI;
+using Game.Player;
 
-namespace Game;
+namespace Game.Interactables;
 
 /// <summary>
 /// BookViewUI Script.

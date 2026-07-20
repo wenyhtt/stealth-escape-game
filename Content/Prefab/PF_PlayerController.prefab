@@ -6,12 +6,12 @@
 	{
 		"ID": "089f8074099ee3aabfb2f4dc20f11008",
 		"TypeName": "FlaxEngine.CharacterController",
-		"Name": "CharacterController",
+		"Name": "PlayerController",
 		"Layer": 2
 	},
 	{
-		"ID": "089f80741690324fc665cfb763ed0fd2",
-		"TypeName": "Game.PlayerScript",
+		"ID": "089f80ee17c44131ff2a3be89be00e3a",
+		"TypeName": "Game.Player.PlayerScript",
 		"ParentID": "089f8074099ee3aabfb2f4dc20f11008",
 		"V": {
 	"PlayerController": "089f8074099ee3aabfb2f4dc20f11008",
