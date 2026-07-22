@@ -6,12 +6,13 @@ using Game.Interfaces;
 namespace Game.Interactables;
 
 /// <summary>
-/// Door Script.
+/// SecurityDoor Script.
 /// </summary>
-public class Door : Script, IInteractable
+public class SecurityDoor : Script, IInteractable
 {
     public void Interact()
     {
-        Debug.Log("This is Door!");
+        Debug.Log("This is Security Door!");
+        SecurityDoorViewUI.Instance.Show();
     }
 }

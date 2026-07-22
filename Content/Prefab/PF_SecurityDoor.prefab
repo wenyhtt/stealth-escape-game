@@ -6,7 +6,7 @@
 	{
 		"ID": "089f80e30bd8d06edd35eed348441b04",
 		"TypeName": "FlaxEngine.EmptyActor",
-		"Name": "Door"
+		"Name": "SecurityDoor"
 	},
 	{
 		"ID": "089f80e3146fe82ce9096585be86bb54",
@@ -20,6 +20,7 @@
 				"Z": 0.10000000149011612
 			}
 		},
+		"Layer": 2,
 		"Model": "62a9aa73424580375cd97a88a2302cef",
 		"Buffer": {
 			"Entries": [
@@ -33,10 +34,17 @@
 		}
 	},
 	{
+		"ID": "089f805e1980eccb90d286d64c67903c",
+		"TypeName": "Game.Interactables.SecurityDoor",
+		"ParentID": "089f80e3146fe82ce9096585be86bb54",
+		"V": {}
+	},
+	{
 		"ID": "089f80e3146eb8b0e9096585be86bb34",
 		"TypeName": "FlaxEngine.BoxCollider",
 		"ParentID": "089f80e3146fe82ce9096585be86bb54",
 		"Name": "Collider",
+		"Layer": 2,
 		"Center": {
 			"X": -0.000003814697265625,
 			"Y": -0.000003051757857974735,

@@ -71,10 +71,9 @@ public class PlayerController : Script
         var ray = new Ray(CameraTarget.Position, CameraTarget.Direction);
         if (Physics.RayCast(ray.Position, ray.Direction, out var hit, InteractDistance, InteractableLayer))
         {
-            var interactable = hit.Collider.Parent?.GetScript<BookPickup>() as IInteractable;
-            // NOTE: for multiple interactable types, use a shared lookup instead of hardcoding BookPickup
+            var interactable = hit.Collider.Parent?.GetScript<IInteractable>();
 
-            FlaxEngine.Debug.Log("Interactable hit: " + hit.Collider.Parent?.Name);
+            // FlaxEngine.Debug.Log("Interactable hit: " + hit.Collider.Parent?.Name);
 
             if (interactable != null && Input.GetAction("Interact"))
             {
