@@ -6,6 +6,13 @@
 		{
 			"ID": "089f80a40de493048c54bde91ffca4ac",
 			"TypeName": "FlaxEngine.Scene",
+			"Lightmaps": [
+				{
+					"Lightmap0": "df86835e462c6392ddb459b6abee549d",
+					"Lightmap1": "46a2cf814ff68d53001b9787c7132eb2",
+					"Lightmap2": "02756a42447c700ab0b49f83f8ae8f91"
+				}
+			],
 			"LightmapSettings": {
 				"IndirectLightingIntensity": 1.0,
 				"GlobalObjectsScale": 1.0,
@@ -144,8 +151,8 @@
 			"Name": "Crosshair",
 			"Transform": {
 				"Translation": {
-					"X": 928.0,
-					"Y": 508.0,
+					"X": 260.0,
+					"Y": 203.5,
 					"Z": 0.0
 				}
 			},
@@ -380,6 +387,17 @@
 				}
 			},
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.0029296875,
+					"Y": 0.0029296875
+				},
+				"Size": {
+					"X": 0.1650390625,
+					"Y": 0.1650390625
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{
@@ -423,6 +441,17 @@
 			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
 			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
 			"ParentID": "089f8060ee7bc48ace0b8aa3b0642928",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.0302734375,
+					"Y": 0.1708984375
+				},
+				"Size": {
+					"X": 0.0078125,
+					"Y": 0.0078125
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{}
@@ -456,6 +485,17 @@
 				}
 			},
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.0029296875,
+					"Y": 0.2255859375
+				},
+				"Size": {
+					"X": 0.0244140625,
+					"Y": 0.0244140625
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{
@@ -492,6 +532,17 @@
 			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
 			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
 			"ParentID": "4ca6d57f428a37f15d80af96da4662ac",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.041015625,
+					"Y": 0.1708984375
+				},
+				"Size": {
+					"X": 0.0078125,
+					"Y": 0.0078125
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{}
@@ -525,6 +576,17 @@
 				}
 			},
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.0029296875,
+					"Y": 0.1982421875
+				},
+				"Size": {
+					"X": 0.0244140625,
+					"Y": 0.0244140625
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{
@@ -561,6 +623,17 @@
 			"PrefabID": "089f805fcbf215ebab1801dc52e27960",
 			"PrefabObjectID": "089f8060de5b2907bced78b505383e70",
 			"ParentID": "dfca7b3c4bdc337ee35affbf7e070db1",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.0517578125,
+					"Y": 0.1708984375
+				},
+				"Size": {
+					"X": 0.0078125,
+					"Y": 0.0078125
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{}
@@ -594,6 +667,17 @@
 				}
 			},
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"LightmapIndex": 0,
+			"LightmapArea": {
+				"Location": {
+					"X": 0.0029296875,
+					"Y": 0.1708984375
+				},
+				"Size": {
+					"X": 0.0244140625,
+					"Y": 0.0244140625
+				}
+			},
 			"Buffer": {
 				"Entries": [
 					{
@@ -1098,8 +1182,8 @@
 			"Name": "TextBox",
 			"Transform": {
 				"Translation": {
-					"X": 836.701171875,
-					"Y": 484.5,
+					"X": 168.701171875,
+					"Y": 180.0,
 					"Z": 0.0
 				}
 			},
@@ -1226,8 +1310,8 @@
 			"Name": "OnCorrectCode",
 			"Transform": {
 				"Translation": {
-					"X": 770.201171875,
-					"Y": 400.0,
+					"X": 102.201171875,
+					"Y": 95.5,
 					"Z": 0.0
 				}
 			},

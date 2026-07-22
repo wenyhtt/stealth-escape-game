@@ -1,7 +1,7 @@
 {
 	"ID": "2364031e4e327637c1ad88b415fa756e",
 	"TypeName": "FlaxEditor.Content.Settings.BuildSettings",
-	"EngineBuild": 6605,
+	"EngineBuild": 6912,
 	"Data": {
 	"OutputName": "${PROJECT_NAME}",
 	"MaxAssetsPerPackage": 4096,
@@ -15,6 +15,7 @@
 	"ShadersNoOptimize": false,
 	"ShadersGenerateDebugData": false,
 	"SkipDefaultFonts": false,
+	"MaxMeshPositionError": 0.5,
 	"SkipDotnetPackaging": false,
 	"SkipUnusedDotnetLibsPackaging": true,
 	"Presets": [
@@ -23,7 +24,7 @@
 			"Targets": [
 				{
 					"Name": "Windows",
-					"Output": "Output\\Windows",
+					"Output": "Output\\Win64",
 					"Platform": 2,
 					"Mode": 1,
 					"CustomDefines": null,
