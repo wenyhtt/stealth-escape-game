@@ -1,14 +1,14 @@
 {
 	"ID": "9eba3d2a4cee4c099117f49c5dffc171",
 	"TypeName": "FlaxEditor.Content.Settings.GameSettings",
-	"EngineBuild": 6910,
+	"EngineBuild": 6912,
 	"Data": {
 	"ProductName": "FirstPersonShooter",
 	"CompanyName": "Flax",
 	"CopyrightNotice": null,
 	"Version": null,
 	"Icon": null,
-	"FirstScene": "a470726f441936acfe25318b162c336c",
+	"FirstScene": "089f80a40de493048c54bde91ffca4ac",
 	"NoSplashScreen": false,
 	"SplashScreen": null,
 	"Time": "9acd18b0496064d35799f390d3a2b374",
