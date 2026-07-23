@@ -1,0 +1,49 @@
+{
+	"ID": "089f809a40bfad3b99d0307ba6c6fd40",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6912,
+	"Data": [
+	{
+		"ID": "089f809a40be8ab999d02d55a6c6ddc6",
+		"TypeName": "FlaxEngine.CharacterController",
+		"Name": "CharacterController",
+		"Radius": 40.0,
+		"Height": 170.0
+	},
+	{
+		"ID": "089f809a45df1f6b9e53e1cdd3ec54a0",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "089f809a40be8ab999d02d55a6c6ddc6",
+		"Name": "Model",
+		"Model": "089f80591629c3341af555d1b1ef8ae6",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				},
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				},
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				},
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

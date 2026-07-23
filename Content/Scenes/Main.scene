@@ -1444,6 +1444,44 @@
 				"Y": 99.66869354248047,
 				"Z": 99.6687240600586
 			}
+		},
+		{
+			"ID": "089f809a474bd03d9ec3d5dad84be674",
+			"PrefabID": "089f809a40bfad3b99d0307ba6c6fd40",
+			"PrefabObjectID": "089f809a40be8ab999d02d55a6c6ddc6",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "PF_Enemy",
+			"Transform": {
+				"Translation": {
+					"X": 414.55023193359375,
+					"Y": 144.99993896484375,
+					"Z": 721.5352172851563
+				}
+			}
+		},
+		{
+			"ID": "2f010ab342b64609743c44b7d0b6d98a",
+			"TypeName": "Game.Enemy.EnemyController",
+			"ParentID": "089f809a474bd03d9ec3d5dad84be674",
+			"V": {
+	"EnemyMesh": "089f809a474c8f729ec3d5dbd84be6c6",
+	"Player": "089f80fc0adc55976db7654ded5b32ec",
+	"Controller": "089f809a474bd03d9ec3d5dad84be674"
+}
+		},
+		{
+			"ID": "089f809a474c8f729ec3d5dbd84be6c6",
+			"PrefabID": "089f809a40bfad3b99d0307ba6c6fd40",
+			"PrefabObjectID": "089f809a45df1f6b9e53e1cdd3ec54a0",
+			"ParentID": "089f809a474bd03d9ec3d5dad84be674",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
 		}
 	]
 }
