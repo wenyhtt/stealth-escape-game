@@ -11,7 +11,7 @@ public class PlayerController : Script
     public CharacterController Player;
     public Camera CameraTarget;
 
-    public Model SphereModel;
+    public StaticModel PlayerMesh;
 
     public float CameraSmoothing = 20.0f;
 
@@ -59,7 +59,7 @@ public class PlayerController : Script
 
             // Mouse
             var mouseDelta = new Float2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-            _pitch = Mathf.Clamp(_pitch + mouseDelta.Y, -88, 88);
+            _pitch = Mathf.Clamp(_pitch + mouseDelta.Y, -44, 65);
             _yaw += mouseDelta.X;
         }
 
@@ -105,10 +105,15 @@ public class PlayerController : Script
 
         var velocity = new Vector3(inputH, 0.0f, inputV);
         velocity.Normalize();
-        Vector3 rotation = CameraTarget.LocalEulerAngles;
-        rotation.X = 0;
-        rotation.Z = 0;
-        velocity = Vector3.Transform(velocity, Quaternion.Euler(rotation));
+
+        // Camera rotation based from mouse rotation
+        Vector3 camRotation = CameraTarget.LocalEulerAngles;
+        camRotation.X = 0;
+        camRotation.Z = 0;
+        velocity = Vector3.Transform(velocity, Quaternion.Euler(camRotation));
+
+        // Player rotation in Y axis based on horizontal mouse input
+        PlayerMesh.LocalOrientation = Quaternion.Euler(0, _yaw + 90, 0);
 
         if (Player.IsGrounded)
         {

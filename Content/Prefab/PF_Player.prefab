@@ -7,8 +7,8 @@
 		"ID": "089f80fc0e39b6355b60123f35f2a9b4",
 		"TypeName": "FlaxEngine.CharacterController",
 		"Name": "Player",
-		"Radius": 20.0,
-		"Height": 170.0
+		"Radius": 30.0,
+		"Height": 180.0
 	},
 	{
 		"ID": "089f80fc0ad8d8536db73523ed59515c",
@@ -17,11 +17,48 @@
 		"V": {
 	"Player": "089f80fc0e39b6355b60123f35f2a9b4",
 	"CameraTarget": "089f80fc165b208b62a7bcc67ebf18bc",
+	"PlayerMesh": "089f80541005fd308e1afb6731625b26",
 	"InteractDistance": 250.0,
 	"InteractableLayer": {
 		"Mask": 4
 	}
 }
+	},
+	{
+		"ID": "089f80541005fd308e1afb6731625b26",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "089f80fc0e39b6355b60123f35f2a9b4",
+		"Name": "StaticModel",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 5.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.7071068286895752,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		},
+		"Model": "089f80580b603157036e42cbc6a8fe30",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				},
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
 	},
 	{
 		"ID": "089f80fc165b208b62a7bcc67ebf18bc",
@@ -31,7 +68,7 @@
 		"Transform": {
 			"Translation": {
 				"X": 0.0,
-				"Y": 90.0,
+				"Y": 100.0,
 				"Z": 0.0
 			}
 		},
