@@ -904,6 +904,13 @@
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "089f807a26e4977967b3e583b0fca976",
 			"Name": "BookViewController",
+			"Transform": {
+				"Translation": {
+					"X": 1.80078125,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
 			"Control": "FlaxEngine.GUI.Image",
 			"Data": {
 	"Brush": null,
@@ -943,8 +950,8 @@
 		"Y": 1.0
 	},
 	"Offsets": {
-		"Left": 0.0,
-		"Right": 0.0,
+		"Left": 1.8007812,
+		"Right": -1.8007812,
 		"Top": 0.0,
 		"Bottom": 0.0
 	},
@@ -1027,7 +1034,7 @@
 				"Translation": {
 					"X": -64.01089477539063,
 					"Y": 173.00265502929688,
-					"Z": 8.90509033203125
+					"Z": 7.616790771484375
 				}
 			}
 		},
@@ -1481,6 +1488,75 @@
 					{},
 					{}
 				]
+			}
+		},
+		{
+			"ID": "089f80510ad8125f4bd833119a979dbe",
+			"TypeName": "FlaxEngine.NavMeshBoundsVolume",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "NavMeshBoundsVolume",
+			"Transform": {
+				"Translation": {
+					"X": -116.77520751953125,
+					"Y": 520.0,
+					"Z": 112.33389282226563
+				}
+			}
+		},
+		{
+			"ID": "089f80510ae2fc6e4bdbe5339abc9328",
+			"TypeName": "FlaxEngine.NavMesh",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "NavMesh.Default",
+			"DataAsset": "089f80e60d2effb33a47f621ebf07dc2",
+			"Properties": {
+				"Name": "Default"
+			}
+		},
+		{
+			"ID": "089f80510bc40e48559cd33bfc45e22e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "089f80a40de493048c54bde91ffca4ac",
+			"Name": "Cube",
+			"Transform": {
+				"Translation": {
+					"X": 1460.9229736328125,
+					"Y": 234.95733642578125,
+					"Z": 48.887939453125
+				},
+				"Orientation": {
+					"X": -0.15532632172107697,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.987863302230835
+				},
+				"Scale": {
+					"X": 5.126231670379639,
+					"Y": 1.0,
+					"Z": 18.195819854736328
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "089f80520c3f801f580638441463d47c",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "089f80510bc40e48559cd33bfc45e22e",
+			"Name": "BoxCollider",
+			"Size": {
+				"X": 99.9999771118164,
+				"Y": 100.0,
+				"Z": 100.0
 			}
 		}
 	]
