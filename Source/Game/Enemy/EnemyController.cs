@@ -10,8 +10,8 @@ public class EnemyController : Script
     public StaticModel EnemyMesh;
     public PlayerController Player;
     public CharacterController Controller;
-    public float Speed = 250.0f; 
-    public float Range = 1500.0f;
+    public float Speed = 250.0f;
+    public float Range = 1000.0f;
 
     /// <summary>
     /// How close the enemy needs to get to a waypoint before advancing to the next one.
@@ -24,7 +24,7 @@ public class EnemyController : Script
     public float PathRecalcInterval = 0.25f;
 
     /// <summary>
-    /// How fast the enemy rotates to face the player (degrees per second). 
+    /// How fast the enemy rotates to face the player (degrees per second).
     /// Set to 0 for instant rotation.
     /// </summary>
     public float RotationSpeed = 360.0f;
